@@ -1,7 +1,7 @@
 {
   "name": "reactdemo",
   "version": "0.1.0",
-  "homepage": "https://Ammisettychamu33.github.io/Muzic_Application",
+  "homepage": "https://ammisettychamu33.github.io/Muzic_WebApplication",
   "private": true,
   "dependencies": {
     "axios": "^1.7.9",
