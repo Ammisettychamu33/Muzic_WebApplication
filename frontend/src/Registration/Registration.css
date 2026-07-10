@@ -1,0 +1,179 @@
+/* Registration.css */
+
+/* Background and Container */
+.registration-container {
+  margin-top:100px;
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.8), rgba(45, 45, 45, 0.8)),
+              url('https://images.template.net/wp-content/uploads/2014/11/creative-music-platforms-backgrounds1.jpg')
+              no-repeat center center / cover;
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 2rem; /* Add padding for spacing */
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); /* Adds depth */
+}
+
+/* Form Container */
+.registration-form {
+  background: rgba(255, 255, 255, 0.05); /* Semi-transparent background */
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px; /* Limit maximum width */
+  box-sizing: border-box;
+  animation: slideUp 0.8s ease-out; /* Slide-up animation */
+  text-align: center;
+}
+
+/* Form Heading */
+.registration-form h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, #ff4081, #7c4dff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Gradient text effect */
+}
+
+/* Form Layout */
+.registration-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Space between form elements */
+}
+
+/* Form Labels */
+.registration-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.9); /* Light text color */
+  font-weight: 400;
+  text-align: left;
+}
+
+/* Input Fields */
+.registration-form input {
+  width: 100%; /* Full width */
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05); /* Semi-transparent background */
+  color: white; /* White text */
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+.registration-form input:focus {
+  outline: none;
+  border-color: #7c4dff; /* Purple border on focus */
+  background: rgba(255, 255, 255, 0.1); /* Slightly lighter background */
+}
+
+/* Error Messages */
+.registration-form .error {
+  color: #ff5252; /* Red error text */
+  font-size: 0.9rem;
+  margin-top: -1rem;
+  margin-bottom: 0;
+  display: block;
+  text-align: left;
+}
+
+/* Submit Button */
+.registration-form button {
+  background: linear-gradient(45deg, #ff4081, #7c4dff); /* Gradient button */
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  width: 100%; /* Full width */
+}
+
+.registration-form button:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 5px 15px rgba(124, 77, 255, 0.4); /* Shadow on hover */
+}
+
+.registration-form button:disabled {
+  opacity: 0.7; /* Dim the button when disabled */
+  cursor: not-allowed; /* Change cursor to indicate disabled state */
+}
+
+/* Placeholder Text */
+.registration-form input::placeholder {
+  color: rgba(255, 255, 255, 0.5); /* Light placeholder text */
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media screen and (min-width: 1440px) {
+  .registration-form {
+    max-width: 560px;
+    padding: 3rem;
+  }
+
+  .registration-form h2 {
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .registration-container {
+    padding: 1rem; /* Reduce padding on smaller screens */
+  }
+
+  .registration-form {
+    padding: 1.5rem;
+    max-width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .registration-form h2 {
+    font-size: 1.8rem; /* Smaller heading on mobile */
+  }
+
+  .registration-form input {
+    padding: 0.8rem; /* Smaller padding on mobile */
+  }
+
+  .registration-form button {
+    padding: 0.8rem; /* Smaller padding on mobile */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .registration-form {
+    padding: 1rem;
+    max-width: 100%; /* Full width on very small screens */
+  }
+
+  .registration-form h2 {
+    font-size: 1.5rem; /* Even smaller heading on very small screens */
+  }
+
+  .registration-form input {
+    padding: 0.75rem; /* Smaller padding on very small screens */
+  }
+
+  .registration-form button {
+    padding: 0.75rem; /* Smaller padding on very small screens */
+  }
+}

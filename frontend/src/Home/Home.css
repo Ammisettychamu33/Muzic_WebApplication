@@ -1,0 +1,198 @@
+/* Home.css */
+.home {
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.hero-section {
+  background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')
+      no-repeat center center / cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 80px;
+  margin:10px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.explore-btn {
+  padding: 1rem 2rem;
+  background: linear-gradient(45deg, #ff4081, #7c4dff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(124, 77, 255, 0.4);
+}
+
+.featured,
+.genres {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 2rem auto;
+  border-radius: 15px;
+  max-width: 1200px;
+}
+
+.featured h2,
+.genres h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.playlist-container,
+.genre-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.playlist-card,
+.genre-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  width: 200px;
+  max-width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.playlist-card:hover,
+.genre-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.playlist-card img,
+.genre-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.playlist-card p,
+.genre-card p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (min-width: 1440px) {
+  .content h1 {
+    font-size: 3.5rem;
+  }
+
+  .featured,
+  .genres {
+    max-width: 1400px;
+    padding: 2.5rem;
+  }
+
+  .playlist-card,
+  .genre-card {
+    width: 220px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .featured,
+  .genres {
+    padding: 1.5rem;
+    margin: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 2.25rem;
+  }
+
+  .content p {
+    font-size: 1.05rem;
+  }
+
+  .explore-btn {
+    padding: 0.85rem 1.75rem;
+  }
+
+  .featured,
+  .genres {
+    padding: 1.25rem;
+    margin: 1rem;
+  }
+
+  .featured h2,
+  .genres h2 {
+    font-size: 1.6rem;
+  }
+
+  .playlist-card,
+  .genre-card {
+    width: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 0 1rem;
+  }
+
+  .content h1 {
+    font-size: 1.75rem;
+  }
+
+  .content p {
+    font-size: 0.95rem;
+  }
+
+  .explore-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .featured,
+  .genres {
+    padding: 1rem;
+    margin: 0.75rem;
+  }
+
+  .playlist-card,
+  .genre-card {
+    width: 100%;
+    max-width: 220px;
+  }
+}
