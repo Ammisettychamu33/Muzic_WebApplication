@@ -1,6 +1,7 @@
 {
   "name": "reactdemo",
   "version": "0.1.0",
+  "homepage": "https://Ammisettychamu33.github.io/Muzic_Application",
   "private": true,
   "dependencies": {
     "axios": "^1.7.9",
@@ -24,6 +25,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -45,12 +48,14 @@
       "last 1 safari version"
     ]
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "This project was bootstrapped with Create React App",
   "main": "index.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.3.0",
     "nodemon": "^3.1.14"
   }
 }
