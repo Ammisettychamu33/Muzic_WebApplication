@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Muzic_Application/static/css/main.1b27ecbc.css",
+    "main.js": "/Muzic_Application/static/js/main.5906e9e8.js",
+    "index.html": "/Muzic_Application/index.html",
+    "main.1b27ecbc.css.map": "/Muzic_Application/static/css/main.1b27ecbc.css.map",
+    "main.5906e9e8.js.map": "/Muzic_Application/static/js/main.5906e9e8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b27ecbc.css",
+    "static/js/main.5906e9e8.js"
+  ]
+}
