@@ -125,13 +125,13 @@
 /* Responsive Design */
 @media screen and (min-width: 1440px) {
   .contact {
-    padding: 150px;
+    padding: 100px;
   }
 
   .content {
     max-height:110vh;
-    max-width: 70vw;
-    padding: 2rem;
+    max-width: 50vw;
+    padding: 1rem;
   }
 
   .contact h1 {
