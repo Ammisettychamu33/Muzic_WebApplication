@@ -1,3 +1,12 @@
+// Ensure compatibility with diverse Node.js runtimes
+const buffer = require('buffer');
+if (!buffer.SlowBuffer) {
+  buffer.SlowBuffer = buffer.Buffer;
+}
+if (buffer.SlowBuffer && !buffer.SlowBuffer.prototype) {
+  buffer.SlowBuffer.prototype = buffer.Buffer.prototype;
+}
+
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
