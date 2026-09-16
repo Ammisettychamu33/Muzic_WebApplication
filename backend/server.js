@@ -11,17 +11,30 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // ================= Middleware =================
-app.use(cors());
+const frontendUrl = process.env.FRONTEND_URL ? process.env.FRONTEND_URL.replace(/\/$/, '') : null;
+const corsOptions = {
+  origin: frontendUrl
+    ? [frontendUrl, 'http://localhost:3000', 'http://127.0.0.1:3000']
+    : true,
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // ================= MongoDB =================
-mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => console.log('✅ MongoDB Connected Successfully'))
-  .catch(err => {
-    console.error('❌ MongoDB Connection Error:', err.message);
-    process.exit(1);
-  });
+const mongoUri = process.env.MONGODB_URI || process.env.MONGO_URI;
+
+if (!mongoUri) {
+  console.warn('⚠️ Warning: Neither MONGODB_URI nor MONGO_URI is set in environment variables.');
+} else {
+  mongoose
+    .connect(mongoUri)
+    .then(() => console.log('✅ MongoDB Connected Successfully'))
+    .catch(err => {
+      console.error('❌ MongoDB Connection Error:', err.message);
+    });
+}
 
 // ================= Schemas =================
 const UserSchema = new mongoose.Schema(
@@ -94,6 +107,12 @@ const Album = mongoose.model('Album', AlbumSchema);
 const Contact = mongoose.model('Contact', ContactSchema);
 
 // ================= Health Check =================
+app.get('/health', (req, res) => {
+  res.status(200).json({
+    status: 'ok',
+  });
+});
+
 app.get('/', (req, res) => {
   res.json({
     success: true,

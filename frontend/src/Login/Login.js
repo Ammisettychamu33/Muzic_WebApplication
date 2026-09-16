@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
-const API_URL = 'http://localhost:5000';
+import API_URL from '../config/api';
 
 function Login({ onLogin }) {
     const [email, setEmail] = useState('');

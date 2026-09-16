@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Crud.css";
 
-const API_URL = "http://localhost:5000";
+import API_URL from "../config/api";
 
 const Crud = () => {
   const [data, setData] = useState([]);

@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './Registration.css';
 
-const API_URL = 'http://localhost:5000';
+import API_URL from '../config/api';
 
 function Registration({ onRegister }) {
   const [username, setUsername] = useState('');
