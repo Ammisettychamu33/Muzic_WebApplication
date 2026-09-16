@@ -158,13 +158,13 @@ Muzic_WebApplication/
 | `PORT` | Listening port for Express (assigned automatically by Render, default `5000`) |
 | `MONGODB_URI` | MongoDB Atlas cluster connection string |
 | `JWT_SECRET` | Secret key for signing and verifying JWT authentication tokens |
-| `FRONTEND_URL` | Deployed frontend URL for CORS authorization (e.g., `https://muzic-web-application.vercel.app`) |
+| `FRONTEND_URL` | Deployed frontend URL for CORS authorization |
 
 ### Frontend (`frontend/.env`)
 
 | Variable | Description |
 | :--- | :--- |
-| `REACT_APP_API_URL` | Base URL of deployed backend API (e.g., `https://muzic-webapplication.onrender.com`) |
+| `REACT_APP_API_URL` | Base URL of the deployed backend API |
 
 ---
 
@@ -237,7 +237,6 @@ The application will open automatically at [http://localhost:3000](http://localh
 - **Environment Variables:** `MONGODB_URI`, `JWT_SECRET`, `FRONTEND_URL = https://muzic-web-application.vercel.app`
 
 ### Database (MongoDB Atlas)
-- **Network Access:** Configured to allow cloud web service access (`0.0.0.0/0`).
 - **Database Access:** Dedicated user with read/write privileges.
 
 ---
