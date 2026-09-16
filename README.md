@@ -7,7 +7,7 @@ A modern, full-stack MERN music streaming web application designed for exploring
 ## 🔗 Live Application
 
 - **Frontend (Live Demo):** `[Live Demo – add Vercel URL]`
-- **Backend (API):** `[API – add Render URL]`
+- **Backend (API):** https://muzic-webapplication.onrender.com
 
 ---
 
