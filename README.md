@@ -52,7 +52,7 @@ A full-stack MERN (MongoDB, Express.js, React.js, Node.js) music streaming and c
 
 ## 🏗 Architecture
 
-```
+```text
 ┌───────────────────────────────────────────────────────────┐
 │                      Client Tier                          │
 │               React 19 SPA (Hosted on Vercel)             │
@@ -79,7 +79,7 @@ A full-stack MERN (MongoDB, Express.js, React.js, Node.js) music streaming and c
 
 ## 📂 Project Structure
 
-```
+```text
 Muzic_WebApplication/
 ├── backend/
 │   ├── config/
