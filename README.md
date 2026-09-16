@@ -4,7 +4,7 @@ A full-stack MERN (MongoDB, Express.js, React.js, Node.js) music streaming and c
 
 ---
 
-## 🌐 Live Application & Links
+## Live Application & Links
 
 - **Live Demo (Frontend):** [https://muzic-web-application.vercel.app/](https://muzic-web-application.vercel.app/)
 - **Live API (Backend):** [https://muzic-webapplication.onrender.com](https://muzic-webapplication.onrender.com/)
@@ -13,44 +13,44 @@ A full-stack MERN (MongoDB, Express.js, React.js, Node.js) music streaming and c
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React.js** (v19) — Component-based UI library
 - **React Router DOM** (v7) — Client-side declarative routing and protected route guards
 - **Axios & Fetch API** — Asynchronous HTTP requests and backend integration
-- **Lucide React & React Icons** — Modern vector icons
-- **Vanilla CSS3** — Custom responsive design and smooth animations
+- **Lucide React & React Icons** — UI icons
+- **Vanilla CSS3** — Responsive styling and layout design
 
 ### Backend
 - **Node.js** (v20 LTS) — Server-side JavaScript runtime
 - **Express.js** (v4) — RESTful API framework
 - **Mongoose** (v8) — Object Data Modeling (ODM) for MongoDB
 - **JSON Web Tokens (JWT)** — Stateless user session authentication
-- **bcryptjs** — Salted password hashing and verification
+- **bcryptjs** — Password hashing and verification
 - **CORS & Dotenv** — Cross-Origin Resource Sharing and environment variable configuration
 
 ### Database & Deployment
-- **Database:** MongoDB Atlas (Cloud Document Database)
-- **Frontend Hosting:** Vercel (Edge-network static & SPA hosting)
+- **Database:** MongoDB Atlas (Cloud Database)
+- **Frontend Hosting:** Vercel (Static & Single Page Application Hosting)
 - **Backend Hosting:** Render (Cloud Web Service)
 
 ---
 
-## ✨ Features
+## Features
 
-- **Secure User Authentication:** User registration and login powered by `bcryptjs` password encryption and signed `JWT` tokens.
+- **Secure User Authentication:** User registration and login powered by `bcryptjs` password hashing and signed `JWT` tokens.
 - **Protected Routing & Session Persistence:** Client-side route protection using `localStorage` to guard authenticated sections (Albums, Artists, and Music Collections).
 - **Multilingual Album Discovery:** Browse curated collections across Telugu, Hindi, Tamil, and English music with metadata, integrated audio player, and embedded YouTube videos.
 - **Top Artists Showcase:** Artist profiles featuring bios, genres, individual track streaming with customizable playback speeds (`0.5x`, `1x`, `1.5x`, `2x`), and video spotlights.
 - **Live Music Search:** Real-time search by album title, artist, or genre with external search fallback.
 - **Music Collection Management (CRUD):** Full Create, Read, Update, and Delete capabilities for custom music albums persisted in MongoDB Atlas with interactive modal dialogs.
 - **Contact Inquiries:** Functional contact form storing user messages and feedback directly into the database.
-- **Responsive Navigation:** Interactive navigation drawer for mobile screens and persistent sidebar for desktop layouts.
+- **Responsive Navigation:** Mobile navigation drawer and desktop navigation layout.
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 ```text
 ┌───────────────────────────────────────────────────────────┐
@@ -77,7 +77,7 @@ A full-stack MERN (MongoDB, Express.js, React.js, Node.js) music streaming and c
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 Muzic_WebApplication/
@@ -128,7 +128,7 @@ Muzic_WebApplication/
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### System
 - `GET /health` — Health check endpoint returning `{ "status": "ok" }`
@@ -149,7 +149,7 @@ Muzic_WebApplication/
 
 ---
 
-## ⚙️ Environment Variables
+## Environment Variables
 
 ### Backend (`backend/.env`)
 
@@ -168,7 +168,7 @@ Muzic_WebApplication/
 
 ---
 
-## 💻 Local Installation & Setup
+## Local Installation & Setup
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) (v18 or v20 LTS recommended)
@@ -218,7 +218,7 @@ The application will open automatically at [http://localhost:3000](http://localh
 
 ---
 
-## 🚀 Production Deployment Overview
+## Production Deployment Overview
 
 ### Frontend (Vercel)
 - **Framework Preset:** `Create React App`
@@ -242,6 +242,6 @@ The application will open automatically at [http://localhost:3000](http://localh
 
 ---
 
-## 📄 License
+## License
 
 This project is open source and available under the [ISC License](https://opensource.org/licenses/ISC).
